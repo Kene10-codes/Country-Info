@@ -5,8 +5,8 @@
 }
 
 body {
-    background: #3d64e6; 
-    font-family: 'Montserrat', sans-serif;
+  background: #3d64e6;
+  font-family: "Montserrat", sans-serif;
 }
 
 .container {
@@ -37,16 +37,15 @@ body {
 }
 
 .search button {
-  border; none;
-    font-size: 1em;
-    color: #fff;
-    border-radius: 0.5rem;
-    background: #3d64e6;
-    padding: 0.8em 0;
-    border: 0;
-    outline: 0;
-    cursor: pointer;
-
+  border: none;
+  font-size: 1em;
+  color: #fff;
+  border-radius: 0.5rem;
+  background: #3d64e6;
+  padding: 0.8em 0;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
 }
 
 .search button:hover {
@@ -79,9 +78,9 @@ body {
 }
 
 .result h4 {
-   color: #222a43;
-   font-weight: 500;
-   display: inline;
+  color: #222a43;
+  font-weight: 500;
+  display: inline;
 }
 
 .result span {
@@ -97,9 +96,19 @@ body {
 
 .container h5 {
   color: rgb(44, 41, 41);
-    font-size: 0.9rem;
+  font-size: 0.9rem;
   font-weight: 400;
   text-align: center;
 }
 
+@media only screen and(max-width: 550px) {
+  .search {
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+    gap: 1em;
+  }
 
+  .search button {
+    font-size: 0.8em;
+  }
+}
